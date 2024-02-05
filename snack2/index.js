@@ -7,17 +7,21 @@ Il programma poi deve far comparire un messaggio "il numero è troppo alto" oppu
 Quando l'utente trova il numero, fateglielo sapere
 */
 
-let pcNumber = Math.floor(1+Math.random()*100)
+let pcOutput = document.querySelector("#computer")
+let userOutput = document.querySelector("#user")
+let risultato = document.querySelector("#result")
 
+let pcNumber = Math.floor(1+Math.random()*100)
 let userNumber = prompt("inserire numbero")
   
-console.log(pcNumber)
-console.log(userNumber)
+pcOutput.innerHTML=pcNumber
+userOutput.innerHTML=userNumber
+
 
 if(userNumber > pcNumber){
-    console.log("troppo grande")
+    risultato.innerHTML ="<b>troppo grande</b>"
 }else if(userNumber < pcNumber){
-    console.log("troppo piccolo")
+    risultato.innerHTML ="<b>troppo piccolo</b>"
 } else{
-    console.log("indovinato")
+    risultato.innerHTML ="<b>indovinato</b>"
 }
