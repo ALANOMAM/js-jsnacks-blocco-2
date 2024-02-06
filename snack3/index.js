@@ -19,3 +19,20 @@ for(let i= 0; i<array1.length ; i++){
 }
 
 console.log(array2)
+
+
+/*
+
+let array1 =["elemento","elemento","elemento","elemento"]
+let array2 =["elemento"]
+let n = 0
+
+
+while(array2.length < array1.length){
+    array2.push("nuovo elemento")
+    n++
+}
+
+console.log(array2)
+
+*/
